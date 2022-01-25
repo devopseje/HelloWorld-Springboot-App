@@ -14,7 +14,7 @@ pipeline{
         }
         stage('Create Dockerimage'){
             steps{
-                sh 'docker build -t devopseje/springboot:latest  --privileged .'
+                sh 'docker build --privileged -t devopseje/springboot:latest   .'
             }
         }
         
